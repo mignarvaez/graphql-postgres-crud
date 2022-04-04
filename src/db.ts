@@ -16,6 +16,6 @@ export const connectDB = new DataSource({
   password: DB_PASSWORD,
   database: DB_NAME,
   entities: [Users],
-  synchronize: false,
-  ssl: false,
+  synchronize: true,
+  ssl: true,
 });
